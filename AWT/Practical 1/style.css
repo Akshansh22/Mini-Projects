@@ -1,6 +1,7 @@
-.tab{
+#tb1{
     align-items: center;
     justify-content: center;
     height: auto;
     margin: auto;
+    padding: 100px;
 }
