@@ -1,0 +1,7 @@
+<h1> AWT PRACTICAL 8</h1> 
+<p>Aim: Create a simple XMLHttpRequest and retrieve data from a TXT file.</p> 
+<p>5th Semester, Sec: A</p> 
+<p>Computer technology</p> 
+<p>Name:S Akshansh</p> 
+<p>Roll no: 68</p> <br>
+Reg No:19010927

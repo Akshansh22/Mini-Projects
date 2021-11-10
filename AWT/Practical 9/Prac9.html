@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+    <body> 
+        <div> 
+        <center>
+            <h1>Download Swiggy Wireframe image</h1><br>
+            <a href='#' id='trigger'>Download Image</a> </center>
+        </div> 
+        <img /> 
+        <script> 
+            const trigger = document.querySelector('#trigger'); 
+            trigger.addEventListener('click', () => {   
+                const req = new XMLHttpRequest();   
+                req.responseType = "arraybuffer";   
+                req.onload = function onload() { 
+                const type = this.getResponseHeader('Content-Type');     
+                const jpegData = this.response; 
+                const blob = new Blob([jpegData], { type });     
+                const reader = new FileReader();     
+                reader.onload = e => { 
+                    
+                const anchor = document.createElement('a');   anchor.style.display = 'none'; 
+                anchor.href = e.target.result; 
+                anchor.download = 'image.jpg'; 
+                anchor.click(); 
+            }; 
+            reader.readAsDataURL(blob); 
+            }; 
+            req.onreadystatechange = () => { 
+                if(req.readyState === XMLHttpRequest.OPENED) {  	 	 	
+                    req.setRequestHeader('Accept', 'image/jpeg');       
+                    req.send(); 
+                } 
+            };
+            req.open('get','pic.png');
+        });
+        </script>
+    </body>
+</html>

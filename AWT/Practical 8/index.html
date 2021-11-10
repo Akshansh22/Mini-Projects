@@ -1,0 +1,17 @@
+<html> 
+    <body bgcolor="wheat" text="red"> 
+        <div id="demo"> 
+        <h1> XMLHTTPRequest Object</h1> 
+        <button type="button" onclick="loadFile()">Load Contents</button> </div>
+        <script> 
+        function loadFile() { 
+        const xhttp = new XMLHttpRequest(); 
+        xhttp.onload=function() { 
+        document.getElementById("demo").innerHTML = this.responseText; 
+        } 
+        xhttp.open("GET","pr8.txt"); 
+        xhttp.send(); 
+        } 
+        </script>   
+    </body> 
+</html> 
