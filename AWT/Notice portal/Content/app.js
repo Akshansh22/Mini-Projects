@@ -3,7 +3,7 @@ const menu = [
     id: 1,
     title: "End Sem Exams",
     category: "CT",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-1.jpeg",
     desc: `If you're visiting this page, you're likely here because you're searching for a random sentence.`,
   },
@@ -11,7 +11,7 @@ const menu = [
     id: 2,
     title: "Guidance on higher studies",
     category: "IT",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-2.jpeg",
     desc: `Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play`,
   },
@@ -19,7 +19,7 @@ const menu = [
     id: 3,
     title: "Consent form for offline classes",
     category: "FY",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-3.jpeg",
     desc: `By inputting the desired number, you can make a list of as many random sentences as you want or need.`,
   },
@@ -27,7 +27,7 @@ const menu = [
     id: 4,
     title: "Industry Report",
     category: "CT",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-4.jpeg",
     desc: `Producing random sentences can be helpful in a number of different ways.`,
   },
@@ -35,7 +35,7 @@ const menu = [
     id: 5,
     title: "Change in Time table",
     category: "IT",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-5.jpeg",
     desc: `For writers, a random sentence can help them get their creative juices flowing.`,
   },
@@ -43,7 +43,7 @@ const menu = [
     id: 6,
     title: "First years students freshers",
     category: "FY",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-6.jpeg",
     desc: `Since the topic of the sentence is completely unknown, it forces the writer to be creative when the sentence appears.`,
   },
@@ -51,7 +51,7 @@ const menu = [
     id: 7,
     title: "Web Technology introduction",
     category: "CT",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-7.jpeg",
     desc: `Since the topic of the sentence is completely unknown, it forces the writer to be creative when the sentence appears.`,
   },
@@ -59,7 +59,7 @@ const menu = [
     id: 8,
     title: "How to start a startup",
     category: "IT",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-8.jpeg",
     desc: `Instruction for Conduction of Proctored MSE Online Examination for ODD Term AY 2021-22.`,
   },
@@ -67,7 +67,7 @@ const menu = [
     id: 9,
     title: "Gate exam forms",
     category: "FY",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-9.jpeg",
     desc: `Notice regarding computer technology is organizing a webinar on guidance on higher studies.`,
   },
@@ -75,7 +75,7 @@ const menu = [
     id: 10,
     title: "Generate exam form",
     category: "Commmon",
-    price: "22/10/21",
+    date: "22/10/21",
     img: "./images/item-10.jpeg",
     desc: `Industry Visit and its report 2021-22 Evaluation Seminar.`,
   },
@@ -98,7 +98,7 @@ function diplayMenuItems(menuItems) {
           <div class="item-info">
             <header>
               <h4>${item.title}</h4>
-              <h4 class="price">${item.price}</h4>
+              <h4 class="date">${item.date}</h4>
             </header>
             <p class="item-text">
               ${item.desc}
