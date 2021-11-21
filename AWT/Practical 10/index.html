@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+    <head> 
+        <meta charset='UTF-8'> 
+        <title>dynamic page</title> 
+        <link rel='stylesheet' href='css/style.css'> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+
+        <script> 
+    
+            $(function() { 
+        
+            $("#json-one").change(function() { 
+        
+                var $dropdown = $(this); 
+        
+                $.getJSON("data.json", function(data) { 
+            
+            var key = $dropdown.val();      var vals = []; 
+                                    
+                switch(key) {  	 	 	 	 	 	case 'roll': 
+                            vals = data.roll.split(","); 
+                    break;  	 	 	 	 	 	case 'base': 
+                            vals = ['Please choose from above']; 
+                    } 
+                
+                    var $jsontwo = $("#json-two"); 
+                    $jsontwo.empty(); 
+                    $.each(vals, function(index, value) { 
+                        $jsontwo.append("<option>" + value + "</option>"); 
+                    }); 
+        
+                }); 
+            }); 
+
+
+            }); 
+            </script> 
+    </head> 
+    
+    <body Bgcolor="pink" text="red"> 
+            <h1><u>Practical 10</u></h1><br> 
+            Name:S Akshansh<Br> 
+                <h1>Record of student</h1> 
+                <label>  Roll number:</label> 
+                <select id="json-one"> 
+                    <option selected value="base">Please Select</option> 
+                    <option value="roll">68</option> 
+                </select> 
+            <br /><br> 
+                <label for="subjects">List of subjects:</label> 
+                <select id="json-two"> 
+                    <option>Please choose from above</option> 
+                </select> 
+            </div> 
+    </body> 
+</html> 
+ 
+
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+   
+     
+ 
+ 
+ 
+ 
+ 
