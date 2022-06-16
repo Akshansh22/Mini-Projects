@@ -1,7 +1,0 @@
-{
-    "title": "Dashboard Project",
-    "source": ["sass"],
-    "destination": "css-docs/",
-    "css": ["../css/main.css"],
-    "builder": "node_modules/michelangelo/kss_styleguide/custom-template/"
-}

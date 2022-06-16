@@ -1,8 +1,0 @@
-.card-wrap{
-    display:block;
-    height:26rem;
-    @include overflow-scroll;
-}
-.card-wrap::-webkit-scrollbar{
-    display:none;
-}
