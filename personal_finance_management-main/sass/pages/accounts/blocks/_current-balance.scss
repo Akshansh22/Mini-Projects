@@ -1,0 +1,18 @@
+.current-balance{
+    width:30%;
+    height:85%;
+    background-color: $balance-card-bg;
+    border-radius: $border-radius-xsm;
+    @include d-flex(center);
+
+    &__title{
+        font-size: $font-size-title-md;
+        font-weight: $font-weight-medium;
+        
+    }
+
+    &__money{
+        font-weight: $font-weight-medium;
+        font-size: 1.625rem;
+    }
+}
