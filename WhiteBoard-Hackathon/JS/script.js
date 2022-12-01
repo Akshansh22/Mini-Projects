@@ -214,13 +214,14 @@ cc1.addEventListener("input", function(e){
   canvas.style.backgroundColor = cancolor;
 clear_canvas();
   });
-
+  
+// line color
 var lineColorPicker = document.getElementById("lineColorPicker") ; 
 lineColorPicker.addEventListener("input" , function(e){
   lineColor.style.backgroundColor = line_color ; 
 }) 
 
-  // line color
+  
  
 //On click tool buttons
 //Pencil Button
