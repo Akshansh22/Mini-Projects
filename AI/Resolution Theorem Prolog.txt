@@ -1,0 +1,7 @@
+alive(X,B,D):- \dead(X,B,D).
+dead(X,B,D):-Age is D-B, Age > 150,pompeian(X), mortal(X), born(X,B).
+\dead(X,B,D):-Age is D-B, Age =< 150, pompeian(X),mortal(X), born(X,B).
+mortal(X):-man(X).
+pompeian(X):-man(X).
+man(thor).
+born(thor,40).
